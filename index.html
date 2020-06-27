@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator App</title>
+    <link rel="icon" href="https://png.pngtree.com/png-vector/20190115/ourlarge/pngtree-vector-calculator-icon-png-image_319747.jpg">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<style>
+    body{
+        background-image: url('https://sfwallpaper.com/images/background-image-for-website-14.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    }
+
+    .dvmain{
+        width: 252px !important;
+        margin-top: 50px !important;
+        box-shadow: 0px 0px 10px rgb(180, 94, 94);
+    }
+    .answer{
+        background-color: rgb(190, 190, 190);
+        margin-bottom: 5px;
+        border: 2px solid rgb(106, 106, 143);
+        width: 100%;
+        font-weight: bold;
+    }
+
+    .clrBtn{
+        width: 100%;
+        margin-bottom: 5px;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+
+    .calBtn{
+        margin-bottom: 5px;
+        width: 52px;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+
+    .hBtn{
+        width: 71px;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+
+    button:hover{
+        background-color: rgb(143, 173, 255);
+        border: 2px solid rgb(150, 108, 93);
+        color: whitesmoke
+    }
+
+    .crbg{
+    background-color: rgb(241, 187, 115);
+  }
+</style>
+</head>
+<body>
+    
+    <div class="container-fluid">
+        <div class="text-center">
+           <h1 class="display-2" style="font-weight: bolder; color: rgb(241, 187, 115);">Calculator Application</h1>
+           <hr width="20%" color="light yellow" style="height: 10%;">
+        </div>
+    </div>
+    <div class="container dvmain">
+        <div>
+            <input id="answer" class="answer" type="text" placeholder="0">
+        </div>
+        <div>
+            <button class="clrBtn" onclick="clrAnswer()">C</button>
+        </div>
+        <div>
+            <button class="calBtn" onclick="getNumber('7')">7</button>
+            <button class="calBtn" onclick="getNumber('8')">8</button>
+             <button class="calBtn" onclick="getNumber('9')">9</button>
+             <button class="calBtn" onclick="getNumber('*')">*</button>
+        </div>
+        <div>
+            <button class="calBtn" onclick="getNumber('4')">4</button>
+            <button class="calBtn" onclick="getNumber('5')">5</button>
+             <button class="calBtn" onclick="getNumber('6')">6</button>
+             <button class="calBtn" onclick="getNumber('-')">-</button>
+        </div>
+        <div>
+            <button class="calBtn" onclick="getNumber('1')">1</button>
+            <button class="calBtn" onclick="getNumber('2')">2</button>
+             <button class="calBtn" onclick="getNumber('3')">3</button>
+             <button class="calBtn" onclick="getNumber('+')">+</button>
+        </div>
+        <div>
+            <button class="hBtn" onclick="getNumber('0')">0</button>
+            <button class="hBtn" onclick="getAnswer()">=</button>
+            <button class="hBtn" onclick="getNumber('/')">/</button>
+        </div>
+    </div>
+<footer class="mt-5">
+    <div class="container-fluid crbg text-center">
+        <p class="copyright">Copyright © 2020 reserved by Hassaan Tariq Ahmed(WM12986)</p>
+      </div>
+    </footer>
+</body>
+<script src="app.js"></script>
+</html>
